@@ -19,6 +19,7 @@ def connect(address, port=13579):
 
     # Set up encryption scheme
     enc = PyAES256()
+    password = None
     while not password:
         password = srv.recv().decode('utf-8')
 
