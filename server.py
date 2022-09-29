@@ -8,7 +8,7 @@ from pyaes256 import PyAES256
 def passwd(client, server):
     global enc
     global hashed
-    enc = pyaes256()
+    enc = PyAES256()
     password = ""
 
     # Generate the password for the AES encryption
