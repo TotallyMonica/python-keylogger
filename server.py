@@ -23,8 +23,8 @@ def passwd(client, server):
     hashed = hashlib.sha512(password.encode("utf-8")).hexdigest()
     return hashed
 
-def decrypt(sequence):
-    enc.decrypt(sequence, )
+def decrypt(sequence, password):
+    return enc.decrypt(sequence, password)
 
 def log(sequence):
     print(''.join(sequence))
